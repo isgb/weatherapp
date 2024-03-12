@@ -5,7 +5,11 @@ const API_KEY = "2ba1a6045ce8be8a75cc7dad72102e1f";
 
 async function getWeather(city){
     try {
-        
+        let endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}`;
+
+        const response = await axios.get(endpoint, {
+
+        });
     } catch (error) {
         console.log(error)
         throw new Error(
