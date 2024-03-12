@@ -8,7 +8,11 @@ async function getWeather(city){
         let endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}`;
 
         const response = await axios.get(endpoint, {
-
+            params:{
+                q: city,
+                appid: API_KEY,
+                units: "metric"
+            }
         });
     } catch (error) {
         console.log(error)
