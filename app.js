@@ -8,6 +8,9 @@ async function getWeather(city){
         
     } catch (error) {
         console.log(error)
+        throw new Error(
+            `No es posible obtener la información de la ciudad: ${city}`
+        )
     }
 }
 
