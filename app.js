@@ -9,7 +9,7 @@ function getData() {
 
     if(!city){
         console.log(chalk.red("Por favor, proporcionar un nombre de lugar o ciudad"));
-        console.log(chalk.red("Ejecuta la instrucción de la siguiente forma_ node app.js [nombre ciudad]"));
+        console.log(chalk.red("Ejecuta el comando de la siguiente forma: node app.js [nombre ciudad]"));
     }
 }
 
